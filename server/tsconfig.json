@@ -32,7 +32,7 @@
     "@services/*": ["services/*"],
     "@models/*": ["models/*"],
     "@repositories/*": ["repositories/*"],
-
+    "@interfaces/*": ["interfaces/*"]
 },
   "exclude": [
     "node_modules"

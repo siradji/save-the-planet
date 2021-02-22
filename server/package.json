@@ -41,6 +41,9 @@
     "@controllers/*": "dist/src/controllers/*",
     "@services/*": "dist/src/services/*",
     "@models/*": "dist/src/models/*",
-    "@repositories/*": "dist/srcrepositories/*"
+    "@repositories/*": "dist/src/repositories/*",
+    "@interfaces/*": "dist/src/interfaces/*"
+
+
   }
 }

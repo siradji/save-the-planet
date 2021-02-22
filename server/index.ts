@@ -1,2 +1,2 @@
-import 'module-alias';
+import 'module-alias/register';
 import './src/server';
