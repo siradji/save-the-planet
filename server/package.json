@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/siradji/save-the-planet#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "module-alias": "^2.2.2",
@@ -43,7 +44,5 @@
     "@models/*": "dist/src/models/*",
     "@repositories/*": "dist/src/repositories/*",
     "@interfaces/*": "dist/src/interfaces/*"
-
-
   }
 }
