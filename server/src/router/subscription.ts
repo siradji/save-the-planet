@@ -6,6 +6,6 @@ const controller = new SubscriptionController();
 
 
 router.post('/', (req, res) =>  controller.subscribeToNotification(req, res));
-
+router.post('/register', (req, res) => controller.register(req, res))
 
 export default router;

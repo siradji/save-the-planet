@@ -1,8 +1,11 @@
 import { Request, Response} from 'express'
 
-export default class Subscription {
+import SubscriptionService from '../services/Subscription.service'
 
+export default class Subscription {
+service: SubscriptionService
 constructor() {
+    this.service = new SubscriptionService(); 
 }
 
 public async subscribeToNotification(_request: Request, response: Response): Promise< Response> {
@@ -10,8 +13,15 @@ public async subscribeToNotification(_request: Request, response: Response): Pro
 }
 
 
+public  async register(request: Request, response: Response): Promise<any> {
+        const body = this.bodyParser(request);
+        const newUser = await this.service.createUser(body)
+        response.json({data: newUser})
+}
 
- bodyParser(body: Request['body']): any {
+
+ private bodyParser(req: Request): any {
+     const body = req['body']
     return body
 }
 }
