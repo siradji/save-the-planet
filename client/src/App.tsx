@@ -16,8 +16,10 @@ const App: React.FC = () => {
     <div className="App">
       <Header  title="Green planet" city="London"/>
       <Container>
-          <Hero />        
-          <Analytics />
+        <div className="flex flex-col">
+            <Hero />        
+            <Analytics />
+        </div>
       </Container>
     </div>
   );

@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       colors: {
         'nav-blue': "#499de9",
-        'text-color': "#4a413b"
+        'text-color': "#4a413b",
+        "green-app": "#5ca064",
+        "orange-app":"#fe8359"
       },
       fontFamily: {
         sans: [

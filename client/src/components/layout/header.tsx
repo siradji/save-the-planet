@@ -1,4 +1,5 @@
 import React from 'react';
+import { LocationIcon } from 'src/icons';
 
 
 interface IProps  {
@@ -14,7 +15,10 @@ const Header: React.FC<IProps> = ({title, city}) => {
                 <h1 className="text-lg sm:text-3xl text-text-color">
                     {title}
                 </h1>
+                <div className="flex flex-row items-center">
+                <LocationIcon classes="text-green-app w-6 h-6" />
                 <p className="text-md text-text-color">{city}</p>
+                </div>
             </div>
         </nav>
     )
